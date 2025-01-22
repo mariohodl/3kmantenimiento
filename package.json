@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "json-server": "json-server --watch db.json --port 5500",
+    "concurrently": "concurrently \"yarn json-server\" \"yarn dev\""
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -19,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.1.2",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "postcss": "^8",

@@ -1,0 +1,15 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Hello World",
+            "content": "This is my first post on my new blog!",
+            "img": "/images/post1.jpg"
+        },{
+            "id": 2,
+            "title": "My Second Post",
+            "content": "This is my second post on my new blog!",
+            "img": "/images/post2.jpg"
+        }
+    ]
+}
