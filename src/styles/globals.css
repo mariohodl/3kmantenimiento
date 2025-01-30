@@ -23,7 +23,33 @@
 
 body {
   margin: 0;
-  font-family: var(--font-inter);
+  font-family: Arial, Helvetica, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #d1e4dd !important;
+}
+
+@layer base {
+  :root{
+    --font-inter: Inter, sans-serif;
+    --color-primary: #222222;
+    --color-primary-dark: #080f50;
+    --color-secondary: #c60014;
+
+    /* --color-primary: #05264E; */
+    /* --color-background: #d1e4dd; */
+  }
+}
+
+
+.margin-bottom-100{
+  margin-bottom: 100px;
+}
+
+.margin-top-100{
+  margin-top: 100px;
+}
+
+.margin-top-minus-100{
+  margin-top: -100px;
 }

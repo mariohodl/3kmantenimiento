@@ -1,14 +1,16 @@
 
 const Button = ({
+  variant,
+  classNames,
   children,
-  ...props
 }: Readonly<{
+  variant?: 'outline';
+  classNames?: string;
   children: React.ReactNode;
 }>) => {    
   return (
     <button
-      {...props}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      className={`${variant === 'outline' ? 'border-2' : ''}  font-bold py-3 px-6 rounded-full text-lg ${classNames}`}
     >
       {children}
     </button>

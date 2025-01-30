@@ -1,12 +1,9 @@
 // import Button from '../components/ui/Button';
+import HeroBanner from '../components/common/HeroBannerHome';
 const Home = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <div className=" min-h-screen ">
+        <HeroBanner/>
     </div>
   );
 };
