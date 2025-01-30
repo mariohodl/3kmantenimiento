@@ -1,6 +1,6 @@
 import Container from '../components/ui/Container';
 import SocialMedia from '../components/common/SocialMedia';
-
+import AppLink from '@/components/ui/AppLink';
 
 const Header = () => {
   return (
@@ -11,21 +11,21 @@ const Header = () => {
             </div>
             <div>
                 <nav className="flex items-center">
-                    <a href="#" className="text-primary hover:text-red-700 hover:underline mr-7  text-xl font-medium">
+                    <AppLink href="/">
                         Inicio
-                    </a>
-                    <a href="#" className="text-slate-700 hover:text-red-700 hover:underline mr-7  text-xl font-medium">
+                    </AppLink>
+                    <AppLink href="/quienes-somos">
                         Quienes somos
-                    </a>
-                    <a href="#" className="text-slate-700 hover:text-red-700 hover:underline mr-7  text-xl font-medium">
+                    </AppLink>
+                    <AppLink href="/servicios">
                         Servicios
-                    </a>
-                    <a href="#" className="text-slate-700 hover:text-red-700 hover:underline mr-7  text-xl font-medium">
+                    </AppLink>
+                    <AppLink href="/productos">
                         Productos
-                    </a>
-                    <a href="#" className="text-red-700 hover:text-red-700 hover:underline mr-7 text-xl font-medium">
+                    </AppLink>
+                    <AppLink href="/contacto">
                         Contacto
-                    </a>
+                    </AppLink>
                 </nav>
             </div>
 

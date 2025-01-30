@@ -1,6 +1,7 @@
 import Container from '../components/ui/Container';
 import Input from '../components/ui/Input';
 import SocialMedia from '../components/common/SocialMedia';
+import AppLink from '../components/ui/AppLink';
 const Footer = () => {
   return (
     <footer className="bg-white py-14">
@@ -22,37 +23,37 @@ const Footer = () => {
           <div className=' ml-10'>
             <p className='text-2xl font-bold'>Accesos rapidos</p>
             <div className='flex flex-col mt-4'>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              <AppLink href='/'>
                 Inicio
-              </a>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              </AppLink>
+              <AppLink href="quienes-somos">
                 Quienes somos
-              </a>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              </AppLink>
+              <AppLink href="/servicios">
                 Servicios
-              </a>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
-                Productos y servicios
-              </a>  
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              </AppLink>
+              <AppLink href="/productos">
+                Productos
+              </AppLink>  
+              <AppLink href="/contacto">
                 Contacto
-              </a>
+              </AppLink>
             </div>
           </div>
           <div className='  ml-12'>
             <p className='text-2xl font-bold'>Centro de ayuda</p>
             <div className='flex flex-col mt-4'>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              <a href="#">
                 Política de privacidad
               </a>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              <a href="#">
                 Terminos y Condiciones
               </a>
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              <a href="#">
                 Política de remuneración
               </a>
 
-              <a href="#" className='text-slate-700 hover:text-red-700 hover:underline mb-3 text-xl font-medium'>
+              <a href="#">
                 Contacto
               </a>
             </div>
