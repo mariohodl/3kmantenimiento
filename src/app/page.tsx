@@ -2,7 +2,7 @@
 import HeroBanner from '../components/common/HeroBannerHome';
 const Home = () => {
   return (
-    <div className=" min-h-screen ">
+    <div className=" ">
         <HeroBanner/>
     </div>
   );
