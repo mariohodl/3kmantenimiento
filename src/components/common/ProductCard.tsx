@@ -1,6 +1,6 @@
-import { Star, ShoppingCart, Tag } from 'lucide-react';
+import { Star, ShoppingCart } from 'lucide-react';
 // import { Product } from '../data/products';
-
+import Image from 'next/image'
 export interface Product {
     id: string;
     name: string;
@@ -18,25 +18,18 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
-  const discount = product.discountPrice
-    ? Math.round(((product.price - product.discountPrice) / product.price) * 100)
-    : 0;
+  // const discount = product.discountPrice
+  //   ? Math.round(((product.price - product.discountPrice) / product.price) * 100)
+  //   : 0;
 
   return (
     <div className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
       <div className="relative h-64 overflow-hidden">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
         />
-        {/* <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20" />
-        {discount > 0 && (
-          <div className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-lg text-sm font-bold flex items-center gap-1">
-            <Tag className="w-3 h-3" />
-            {discount}% OFF
-          </div>
-        )} */}
         <div className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md flex flex-col items-end">
           {product.discountPrice ? (
             <>

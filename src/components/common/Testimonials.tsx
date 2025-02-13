@@ -1,7 +1,7 @@
 import React from 'react';
 import { Quote } from 'lucide-react';
 import Container from '../ui/Container';
-
+import Image from 'next/image'
 const testimonials = [
   {
     name: "Sarah Johnson",
@@ -43,12 +43,12 @@ const TestimonialsSection = () => {
               <div className="relative">
                 <Quote className="w-8 h-8 text-blue-500/20 absolute -top-4 -left-4" />
                 <p className="text-gray-600 italic mb-6 relative z-10 text-lg">
-                  "{testimonial.quote}"
+                  {testimonial.quote}
                 </p>
               </div>
               
               <div className="flex items-center">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover mr-4"

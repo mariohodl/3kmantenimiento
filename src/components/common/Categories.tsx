@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const allCategories = [
     {
         id: 1,
@@ -27,7 +27,7 @@ const allCategories = [
         name: 'XXXXXX',
         icon: 'House',
         color: '#f59e0b',
-        imgUrl: ''
+        imgUrl: '/public/myimage.png'
     },
     {
         id: 5,
@@ -41,20 +41,20 @@ const allCategories = [
 const Categories = () => {
   return (
     <div className='py-20 bg-gradient-to-br from-gray-50 to-gray-100'>
-        <h3 className='text-3xl font-semibold text-gray-900 mb-7 text-center'>Nuestras Categorias</h3>
+        <h3 className='text-gray-900 mb-7 text-center text-4xl font-medium'>Nuestras Categorias</h3>
         <div className='flex flex-wrap gap-4 justify-center'>
             {allCategories.map((category) => (
                 <div className='m-5' key={category.id}>
-                    <div className="flex items-center w-60 h-60 bg-white rounded-full shadow-lg overflow-hidden transition-all duration-300 shadow-lg">
+                    <div className="flex items-center w-60 h-60 bg-white rounded-full shadow-lg overflow-hidden transition-all duration-300">
                         <div className="relative h-60 overflow-hidden">
-                            <img
+                            <Image
                                 src={category.imgUrl}
                                 alt={category.name}
                                 className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                     </div>
-                    <h3 className="text-xl text-center font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors mt-4">
+                    <h3 className="text-2xl text-center font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors mt-4">
                         {category.name}
                     </h3>
                     

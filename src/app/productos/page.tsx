@@ -2,9 +2,9 @@
 
 import React from 'react';
 // import { products, Product } from './data/products';
-import { Truck, Shield, Clock, CreditCard } from 'lucide-react';
 import ProductList from './ProductList';
-
+import OurWarranties from '@/components/common/OurWarranties';
+import Container from '@/components/ui/Container';
 export interface ProductType {
   id: string;
   name: string;
@@ -16,7 +16,7 @@ export interface ProductType {
   rating: number;
 }
   
-export const products: ProductType[] = [
+const myProducts: ProductType[] = [
   {
     id: '1',
     name: 'Premium Wireless Headphones',
@@ -90,50 +90,15 @@ const Products = () => {
         </div>
       </div>
 
+      <div className='bg-white'>
+        <Container>
+            <OurWarranties/>
+        </Container>
+      </div>
      
 
       <div className="max-w-7xl mx-auto px-4 py-8">
-        {/* Info Banners */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-blue-100 p-2 rounded-full">
-              <Truck className="h-5 w-5 text-blue-600" />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">Free Shipping</h3>
-              <p className="text-sm text-gray-500">On orders over $200</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-green-100 p-2 rounded-full">
-              <Shield className="h-5 w-5 text-green-600" />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">Secure Payment</h3>
-              <p className="text-sm text-gray-500">100% protected</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-purple-100 p-2 rounded-full">
-              <Clock className="h-5 w-5 text-purple-600" />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">24/7 Support</h3>
-              <p className="text-sm text-gray-500">Dedicated support</p>
-            </div>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3">
-            <div className="bg-orange-100 p-2 rounded-full">
-              <CreditCard className="h-5 w-5 text-orange-600" />
-            </div>
-            <div>
-              <h3 className="font-medium text-gray-900">Easy Returns</h3>
-              <p className="text-sm text-gray-500">30 day returns</p>
-            </div>
-          </div>
-        </div>
-
-        <ProductList products={products} />
+        <ProductList products={myProducts} />
       </div>
     </div>
   );

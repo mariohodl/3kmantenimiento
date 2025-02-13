@@ -2,7 +2,8 @@
 import HeroBanner from '../components/common/HeroBannerHome';
 import Categories from '../components/common/Categories';
 import Testimonials from '../components/common/Testimonials';
-
+import OurWarranties from '../components/common/OurWarranties';
+import Container from '../components/ui/Container';
 const Home = () => {
   return (
     <div className=" ">
@@ -10,8 +11,10 @@ const Home = () => {
       <div>
         <Categories/>
       </div>
-      <div className='bg-white p-10'>
-        ett
+      <div className='bg-white p-4'>
+        <Container>
+          <OurWarranties/>
+        </Container>
       </div>
       <div>
         <Testimonials/>

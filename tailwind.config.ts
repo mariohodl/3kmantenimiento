@@ -15,6 +15,9 @@ export default {
         bgPrimary:  "var(--color-primary)",
         bgSecondary: "var(--color-secondary)",
       },
+      background: {
+        primaryDark:  "var(--color-primary-dark)",
+      }
     },
   },
 } satisfies Config;
