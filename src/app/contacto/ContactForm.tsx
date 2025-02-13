@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-import { Send } from 'lucide-react';
 import Button from '../../components/ui/Button';
 
 const ContactForm = () => {
