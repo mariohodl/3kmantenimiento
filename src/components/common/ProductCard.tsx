@@ -29,6 +29,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
         />
         <div className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md flex flex-col items-end">
           {product.discountPrice ? (

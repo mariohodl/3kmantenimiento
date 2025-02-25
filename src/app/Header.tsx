@@ -14,7 +14,7 @@ const Header = () => {
                     <AppLink href="/">
                         Inicio
                     </AppLink>
-                    <AppLink href="/quienes-somos">
+                    <AppLink href="/quien-somos">
                         Quienes somos
                     </AppLink>
                     <AppLink href="/servicios">
