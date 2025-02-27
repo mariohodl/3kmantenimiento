@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from '../components/ui/Container';
 import Input from '../components/ui/Input';
 import SocialMedia from '../components/common/SocialMedia';
@@ -9,7 +10,9 @@ const Footer = () => {
 
         <div className='flex'>
           <div className=''>
-            LOGO
+            <div className='relative' style={{zIndex: 1, top: -18+'px', left: -18+'px'}}>
+              <Image src="/3k-horizontal.png" alt="logo" width={200} height={70} />
+            </div>
             <p className='text-lg mb-3'><span className='font-bold'>Dirección:</span> Juan Manuel No.276 <br />
             Colonia Centro C.P. 44100 <br />
              Guadalajara, Jalisco.</p>
