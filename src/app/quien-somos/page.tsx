@@ -18,9 +18,9 @@ const QuienesSomos = () => {
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold text-white mb-6">Who We Are</h1>
             <p className="text-xl text-indigo-100 mb-8">
-              We're a team of passionate individuals dedicated to creating exceptional experiences 
-              through innovation and creativity. Since 2015, we've been pushing the boundaries
-              of what's possible in digital transformation.
+              We`&rsquo;`re a team of passionate individuals dedicated to creating exceptional experiences 
+              through innovation and creativity. Since 2015, we`&rsquo;`ve been pushing the boundaries
+              of what`&rsquo;`s possible in digital transformation.
             </p>
             <button className="group flex items-center gap-2 text-white border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-indigo-900 transition-all duration-300">
               Learn More
@@ -109,11 +109,11 @@ const QuienesSomos = () => {
             ].map((member, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="h-64 overflow-hidden">
-                  <img 
+                  {/* <img 
                     src={member.image} 
                     alt={member.name}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                  />
+                  /> */}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
@@ -203,7 +203,7 @@ const QuienesSomos = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Looking Ahead</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Our roadmap for the future and the goals we're working towards.
+            Our roadmap for the future and the goals we`&rsquo;`re working towards.
           </p>
         </div>
 
