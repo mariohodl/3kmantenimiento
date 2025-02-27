@@ -5,8 +5,8 @@ import SocialMedia from '../../components/common/SocialMedia';
 import Container from '../../components/ui/Container';
 import Testimonials from '../../components/common/Testimonials';
 import ContactForm from "./ContactForm";
+import Image from "next/image";
 const Contacto = () => {
-
 
     return (
       <div className=" min-h-screen ">
@@ -78,8 +78,10 @@ const Contacto = () => {
                 </div>
               </article>
               <article className=" w-1/2 flex items-center justify-center">
-                <div className=" border-2 border-secondary">
-                  mapa aquiss
+                <div>
+                poner aqui google maps
+                <Image src="/mapa.jpg" alt="logo" width={500} height={700} />
+
                 </div>
               </article>
             </div>
